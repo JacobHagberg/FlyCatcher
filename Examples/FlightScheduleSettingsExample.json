@@ -1,0 +1,222 @@
+[
+    {
+        "AircraftType": "ARCH",
+        "InstID": "ABCD",
+        "StudentID": "1234567",
+        "Course": 323,
+        "Lesson": 248,
+        "LaunchCount": 1,
+        "ScheduleType": "TA",
+        "Station": "D",
+        "ObserverID": "2345678",
+        "ExcludeTimeBefore": "03:30",
+        "ExcludeTimeAfter": "01:30",
+        "CurrentTimeBuffer": "04:30",
+        "EmailAlerts": [
+            "jane.doe@gmail.com",
+            "john.doe@gmail.com"
+        ],
+        "FlightTimes": [
+            [
+                "06/03/2024 07:15:00",
+                "06/03/2024 13:45:00"
+            ]
+        ]
+    },
+    {
+        "AircraftType": "SEMI",
+        "InstID": "",
+        "StudentID": "1234567",
+        "Course": 325,
+        "Lesson": 106,
+        "LaunchCount": 1,
+        "ScheduleType": "TA",
+        "Station": "D",
+        "ObserverID": "",
+        "ExcludeTimeBefore": "03:00",
+        "ExcludeTimeAfter": "02:30",
+        "CurrentTimeBuffer": "06:30",
+        "EmailAlerts": [
+        ],
+        "FlightTimes": [
+            [
+                "06/03/2024 07:15:00",
+                "06/03/2024 13:45:00"
+            ],
+            [
+                "06/03/2024 15:15:00",
+                "06/03/2024 17:45:00"
+            ],
+            [
+                "06/04/2024 15:15:00",
+                "06/04/2024 17:45:00"
+            ],
+            [
+                "06/06/2024 08:00:00",
+                "06/06/2024 17:45:00"
+            ]
+        ]
+    },
+    {
+        "AircraftType": "ARCH",
+        "InstID": "",
+        "StudentID": "1234567",
+        "Course": 323,
+        "Lesson": 248,
+        "LaunchCount": 1,
+        "ScheduleType": "TA",
+        "Station": "D",
+        "ObserverID": "",
+        "ExcludeTimeBefore": "03:30",
+        "ExcludeTimeAfter": "01:30",
+        "CurrentTimeBuffer": "04:30",
+        "EmailAlerts": [
+            "john.doe@gmail.com"
+        ],
+        "FlightTimes": [
+            [
+                "06/03/2024 07:15:00",
+                "06/03/2024 13:45:00"
+            ],
+            [
+                "06/03/2024 15:15:00",
+                "06/03/2024 17:45:00"
+            ]
+        ]
+    },
+    {
+        "AircraftType": "ARCH",
+        "InstID": "",
+        "StudentID": "1234567",
+        "Course": 323,
+        "Lesson": 248,
+        "LaunchCount": 1,
+        "ScheduleType": "TA",
+        "Station": "D",
+        "ObserverID": "",
+        "ExcludeTimeBefore": "03:30",
+        "ExcludeTimeAfter": "01:30",
+        "CurrentTimeBuffer": "04:30",
+        "EmailAlerts": [
+            "jane.doe@gmail.com"
+        ],
+        "FlightTimes": [
+            [
+                "06/03/2024 07:15:00",
+                "06/03/2024 13:45:00"
+            ],
+            [
+                "06/03/2024 15:15:00",
+                "06/03/2024 17:45:00"
+            ]
+        ]
+    },
+    {
+        "AircraftType": "ARCH",
+        "InstID": "",
+        "StudentID": "1234567",
+        "Course": 323,
+        "Lesson": 248,
+        "LaunchCount": 1,
+        "ScheduleType": "TA",
+        "Station": "D",
+        "ObserverID": "",
+        "ExcludeTimeBefore": "03:30",
+        "ExcludeTimeAfter": "01:30",
+        "CurrentTimeBuffer": "04:30",
+        "EmailAlerts": [
+            "jane.doe@gmail.com"
+        ],
+        "FlightTimes": [
+            [
+                "06/03/2024 07:15:00",
+                "06/03/2024 13:45:00"
+            ],
+            [
+                "06/03/2024 15:15:00",
+                "06/03/2024 17:45:00"
+            ]
+        ]
+    },
+    {
+        "AircraftType": "ARCH",
+        "InstID": "",
+        "StudentID": "1234567",
+        "Course": 323,
+        "Lesson": 248,
+        "LaunchCount": 1,
+        "ScheduleType": "TA",
+        "Station": "D",
+        "ObserverID": "",
+        "ExcludeTimeBefore": "03:30",
+        "ExcludeTimeAfter": "01:30",
+        "CurrentTimeBuffer": "04:30",
+        "EmailAlerts": [
+            "jane.doe@gmail.com"
+        ],
+        "FlightTimes": [
+            [
+                "06/03/2024 07:15:00",
+                "06/03/2024 13:45:00"
+            ],
+            [
+                "06/03/2024 15:15:00",
+                "06/03/2024 17:45:00"
+            ]
+        ]
+    },
+    {
+        "AircraftType": "ARCH",
+        "InstID": "",
+        "StudentID": "1234567",
+        "Course": 323,
+        "Lesson": 248,
+        "LaunchCount": 1,
+        "ScheduleType": "TA",
+        "Station": "D",
+        "ObserverID": "",
+        "ExcludeTimeBefore": "03:30",
+        "ExcludeTimeAfter": "01:30",
+        "CurrentTimeBuffer": "04:30",
+        "EmailAlerts": [
+            "jane.doe@gmail.com"
+        ],
+        "FlightTimes": [
+            [
+                "06/03/2024 07:15:00",
+                "06/03/2024 13:45:00"
+            ],
+            [
+                "06/03/2024 15:15:00",
+                "06/03/2024 17:45:00"
+            ]
+        ]
+    },
+    {
+        "AircraftType": "ARCH",
+        "InstID": "ABCD",
+        "StudentID": "1234567",
+        "Course": 102,
+        "Lesson": 29,
+        "LaunchCount": 1,
+        "ScheduleType": "TA",
+        "Station": "D",
+        "ObserverID": "",
+        "ExcludeTimeBefore": "03:30",
+        "ExcludeTimeAfter": "01:30",
+        "CurrentTimeBuffer": "04:30",
+        "EmailAlerts": [
+            "jane.doe@gmail.com"
+        ],
+        "FlightTimes": [
+            [
+                "06/03/2024 07:15:00",
+                "06/03/2024 13:45:00"
+            ],
+            [
+                "06/03/2024 15:15:00",
+                "06/03/2024 17:45:00"
+            ]
+        ]
+    }
+]

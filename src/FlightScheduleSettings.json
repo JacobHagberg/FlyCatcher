@@ -1,0 +1,26 @@
+[
+    {
+        "AircraftType": "ARCH",
+        "InstID": "",
+        "StudentID": "1234567",
+        "Course": 323,
+        "Lesson": 248,
+        "LaunchCount": 1,
+        "ScheduleType": "TA",
+        "Station": "D",
+        "ObserverID": "",
+        "ExcludeTimeBefore": "03:30",
+        "ExcludeTimeAfter": "01:30",
+        "CurrentTimeBuffer": "04:30",
+        "EmailAlerts": [
+            "john.doe@gmail.com",
+            "jane.doe@gmail.com"
+        ],
+        "FlightTimes": [
+            [
+                "11/19/2024 14:30:00",
+                "11/19/2024 15:00:00"
+            ]
+        ]
+    }
+]
