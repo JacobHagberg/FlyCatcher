@@ -30,6 +30,8 @@ def PrintOutHandling(printNumber, previousPrintNumber, previousPrintNumbers):
     except:
         print('Print Out Handling Error.')
         time.sleep(1)
+    
+    return previousPrintNumber, previousPrintNumbers
         
 def GroupSettingsDict(settings): #settings= the result of the settings dict
     #Tested, works

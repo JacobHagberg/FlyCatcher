@@ -32,10 +32,10 @@ def main():
             try:
                 result = requests.get('https://aims-asp.aero.und.edu/', timeout=4)
                 if result.text.find('This is aims') == -1:
-                    AimsFlightScheduler.PrintOutHandling(printNumber=0, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
+                    previousPrintNumber, previousPrintNumbers = AimsFlightScheduler.PrintOutHandling(printNumber=0, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
                     continue
             except:
-                AimsFlightScheduler.PrintOutHandling(printNumber=0, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
+                previousPrintNumber, previousPrintNumbers = AimsFlightScheduler.PrintOutHandling(printNumber=0, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
                 continue
             
             session = GetAimsSession.GetAimsSession(username=aimsUser, password=aimsPass, configData=configData)
@@ -43,17 +43,17 @@ def main():
                 print('Got New Session')
                 newSessionNeeded = False
             else:
-                AimsFlightScheduler.PrintOutHandling(printNumber=4, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
+                previousPrintNumber, previousPrintNumbers = AimsFlightScheduler.PrintOutHandling(printNumber=4, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
                 continue
         try:
             with open(configData['settingsDict']['flightSchedulerSettingsDictPath'], 'r') as f:
                 settingsDict = json.load(f)
         except:
-            AimsFlightScheduler.PrintOutHandling(printNumber=1, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
+            previousPrintNumber, previousPrintNumbers = AimsFlightScheduler.PrintOutHandling(printNumber=1, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
             continue
         groups = AimsFlightScheduler.GroupSettingsDict(settings=settingsDict)
         if groups == False: 
-            AimsFlightScheduler.PrintOutHandling(printNumber=1, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
+            previousPrintNumber, previousPrintNumbers = AimsFlightScheduler.PrintOutHandling(printNumber=1, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
             continue
         for i in range(len(groups)):
             group = groups[i][0]
@@ -92,9 +92,9 @@ def main():
                     previousPrintNumber, previousPrintNumbers = -1, 0
                 else:
                     print(result)
-                    AimsFlightScheduler.PrintOutHandling(printNumber=3, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
+                    previousPrintNumber, previousPrintNumbers = AimsFlightScheduler.PrintOutHandling(printNumber=3, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
             else:
-                AimsFlightScheduler.PrintOutHandling(printNumber=2, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
+                previousPrintNumber, previousPrintNumbers = AimsFlightScheduler.PrintOutHandling(printNumber=2, previousPrintNumber=previousPrintNumber, previousPrintNumbers=previousPrintNumbers)
 
 if __name__ == '__main__':
     main()
