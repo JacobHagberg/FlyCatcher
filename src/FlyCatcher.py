@@ -64,6 +64,9 @@ def main():
 
             flightSpots = CurrentFlightTimes.GetCurrentFlightSpots(data)
             openSpots = CurrentFlightTimes.GetOpenSlots(data)
+            if flightSpots == False or openSpots == False:
+                newSessionNeeded == True
+                break
 
             chosenFlightTime = -1
             for o in range(len(groups[i])):

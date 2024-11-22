@@ -13,7 +13,10 @@ def ParseDateTime(dateString):
 
 def GetOpenSlots(data):
     openSlotStore = []
-    openSlots = data['availData']['dateAvail']
+    try:
+        openSlots = data['availData']['dateAvail']
+    except:
+        return False
     for day in openSlots:
         for slot in day['slots']:
             startDate = ParseDateTime(dateString=slot['bDT'])
@@ -53,10 +56,11 @@ def GetCurrentFlightSpots(data):
     }
     '''
     currentSlotStore = []
-    if data['schedList'] != None:
+    try:
         currentSlots = data['schedList']
-    else:
-        return []
+        if currentSlots == None: return False
+    except:
+        return False
     for slot in currentSlots:
         startDate = ParseDateTime(slot['activityDate'])
         endDate = ParseDateTime(slot['endDate'])
