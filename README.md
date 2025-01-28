@@ -88,7 +88,7 @@ The format for the time range is as follows: "MM/DD/YYYY HH:MM:SS". Every entry 
 
 To configure FlyCatcher to be on the lookout for multiple flights, just add another flight dictionary to the list in the FlightScheduleSettings.json file. 
 
-Once you have configured both the FlightScheduleSettings.json and the FlightSchedulerConfig.ini files, you can run the program with a terminal in the root flycatcher directory, and running the command python3 /src/FlyCatcher.py 
+Once you have configured both the FlightScheduleSettings.json and the FlightSchedulerConfig.ini files, you can run the program with a terminal in the root FlyCatcher directory, and running the command python3 /src/FlyCatcher.py 
 
 You are able to modify the FlightScheduleSettings.json file after starting the program. If you make a syntax mistake, it will inform you with the printout "Settings Dict Error." which will be replaced by "Looking for valid time slots." once the issue is resolved. 
 Changes made to the FlightSchedulerConfig.ini will not take effect until the program is restarted. 
