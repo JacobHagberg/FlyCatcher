@@ -3,7 +3,7 @@
 
 ## Description
 FlyCatcher is a python program used to simplify the flight slot acquisition process for the UND Aviation's AIMS (Aviation Information Management System).
-FlyCatcher will constantly scrape the open flight stop data from AIMS, and check if there is an open flight slot. If a valid flight slot is found, the program will reserver the flight spot. 
+FlyCatcher will constantly scrape the open flight spot data from AIMS, and check if there is an open flight slot. If a valid flight slot is found, the program will reserver the flight spot. 
 
 ## Table Of Contents
 
@@ -139,7 +139,7 @@ The Basic loop of FlyCatcher is as follows:
 8. Regardless if a flight slot is reserved or not, the program loops back to step 1.
 
 
-## Known issues:
+## Known Issues:
 
 1. ExcludeTimeBefore, ExcludeTimeAfter, and CurrentTimeBuffer do not carry over to the next day due to the time calculation method being used. This means that a time slot the following day will not be invalidated even if it is within the time of, for example: ExcludeTimeAfter.
 2. If FlyCatcher finds a flight slot that it thinks is valid, but one that aims will not allow it to reserve, it will fall into a rut, and will keep trying to sign up for the flight slot it is unable to reserve. 
